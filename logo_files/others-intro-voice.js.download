@@ -1,0 +1,67 @@
+function tourTyped() {
+	THEMEMASCOT.slider = {
+
+	init: function() {
+
+		var t = setTimeout(function() {
+			THEMEMASCOT.slider.TM_typedAnimation();
+		}, 0);
+
+	},
+	
+	TM_typedAnimation: function() {
+		var $typed_text_carousel = $(".typed-text-carousel");
+		if ( $typed_text_carousel.length > 0 ) {
+			$typed_text_carousel.each(function() {
+				var string_1 = $(this).find("span:first-child").text();
+				var string_2 = $(this).find("span:nth-child(2)").text();
+				var string_3 = $(this).find("span:nth-child(3)").text();
+				var str = '';
+				var $this = $(this);
+				if (!string_2.trim() || !string_3.trim()) {
+					str = [string_1];
+				}
+				if (!string_3.trim() && string_2.length) {
+					str = [string_1, string_2];
+				}
+				if (string_1.length && string_2.length && string_3.length) {
+					str = [string_1, string_2, string_3];
+				}
+				var speed = $(this).data("speed");
+				var back_delay = $(this).data("back_delay");
+				var loop = $(this).data("loop");
+				$(this).typed({
+					strings: str,
+					typeSpeed: speed,
+					backSpeed: 0,
+					backDelay: back_delay,
+					cursorChar: "|",
+					loop: loop,
+					contentType: "text",
+					loopCount: false
+				});
+			});
+		}
+	}
+}
+THEMEMASCOT.slider.init();
+}
+
+
+setTimeout(function(){
+	if(!(document.URL.indexOf("index.php") >= 0) && !(document.URL == "https://home.iitd.ac.in/")){
+		if (!localStorage.firstVisit) {
+			if (confirm("As we are up with our new website. Would you like to have a quick overview of the new website?\nOK to start, Cancel to Abort.")) {
+				window.location = "index.php";
+			}
+			else {
+				localStorage.firstVisit = "1";
+				localStorage.disableVoice = "1";
+			}
+		}
+	}
+}, 3000);
+
+$(document).on("click","#voice-get-started",function(e) {
+	//alert("Your device either don\'t support speech recognition or it is disabled.\nIf disabled, You must enable it to use the IITD Voice Assistant.");
+});

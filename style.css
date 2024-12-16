@@ -1,0 +1,255 @@
+* {
+    margin:0px;
+    padding:10px;
+}
+html, body {
+    font-family: Roboto, sans-serif, arial;
+    font-size: 14px;
+    color: #242424;
+}
+.shivam-5
+{
+    position: fixed;
+    left: 20px;
+    border-image: 20px;
+    border: #030000;
+    border-radius: 5px;
+    margin-left: 0px;
+}
+.container1{
+    text-align: center;
+    padding-bottom: 2px;
+        
+}
+
+.container2{
+    padding-top: none;
+    text-align: center;
+    background-color: rgb(243, 8, 8);
+    color: rgb(10, 3, 3);
+    font-size: 20px;
+    display: block;
+    overflow: hidden;
+    box-shadow:12px 12px 12px #ff5722;
+    border-radius: 2px,2px,2px,2px;
+    border-color: #000000;    
+}
+.container2:hover{
+    color:#2c2b2b
+} 
+
+.main-section
+{
+    width: 100%;
+    float: right;
+    padding: 50px 0px 40px 0px;    
+}
+.image-caption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
+}
+
+.heading{
+    font-size: 30px;
+    font-weight: 600;
+    border-bottom: 1px solid #ff5722;
+    margin-bottom: 25px;
+    color: #ff5722;
+    text-align: center;
+}
+.logo{
+    width: 100%;
+}
+nav {
+    width: 100%;
+    background: #ff5722;
+    padding:15px 0px;
+}
+nav a {
+    color: #fff;
+    text-decoration: ivory;
+    font-size: 17px;
+    border-right: 1px solid #ffc3c3;
+    padding:2px 20px;
+}
+.slider {
+    
+   
+    box-shadow: 10px  10px 12px
+    black;
+}
+.slider-img{
+    border: 4px solid black;
+}
+/********** News, Event, Notice Board CSS Starts **********/  
+.event {
+    width: 31%;
+    margin-right: 1%;
+    float: left;
+}
+.event div {
+    padding:10px;
+    background-color: #ccc2bf;
+    box-shadow:10px 10px 12px #242424;
+}
+.event ul li {
+    margin-bottom: 20px;
+    width: 100%;
+    float: left;
+}
+/********** News, Event, Notice Board CSS Ends **********/
+/********** About Us CSS Starts **********/  
+.about-us img {
+    width: 10%;
+    float:left;
+}
+.about-us div {
+    width:70%;
+    margin-left:20px;
+    float:left;
+    line-height:35px;
+}
+/********** About Us CSS Ends **********/
+
+
+/********** Testimonial CSS Ends **********/
+
+/********** Gallery CSS Starts **********/  
+.main-section gallery {
+    width: 16;
+    height: 12;
+    box-sizing: border-box;
+    background-color: rgb(131, 131, 228);
+    box-shadow:10px 10px 12px #242424;
+}
+/********** Gallery CSS Ends **********/
+
+/********** Placement CSS Starts **********/  
+.placement img {
+    border:1px solid #dfdfdf;
+}
+/********** Placement CSS Ends **********/
+
+/********** Footer CSS Starts **********/  
+.footer {
+    background-color:#c5c5c5;
+    padding:70px 0px;
+    width:100%;
+    float:left;
+}
+.footer-sect {
+    width:33%;
+    float:left;
+}
+.footer-sect h2 {
+    color:#070707;
+    margin-bottom: 20px;
+}
+.footer-sect p {
+    color: #030000;
+    line-height: 22px;
+    padding:0px 30px 20px 0px;
+}
+.footer-menu li {
+    width: 50%;
+    float: left;
+    margin-bottom: 10px;
+}
+.footer-menu li a {
+    color:#000000;
+    text-decoration: none;
+}
+.footer-contact{
+    margin-bottom:15px;
+    list-style: none;
+    color: #000000;
+    float:right;
+}
+.main-head{
+    
+    border: 2px solid red;
+    background-color: #ccc2bf;
+    padding-top: none;
+    width:100%;
+    height:60px;
+    box-shadow:10px 10px 12px #070707;
+}
+.main-head2{
+    padding-left: 250px;
+    font-size: medium;
+    font-weight: 300;
+    color: red;
+
+}
+.main-head2 , a{
+    color: #ff5722;
+    font-size: larger;
+    font-weight: 400;
+
+}
+.photo-notice-container {
+    position: relative;
+    width: 300px; /* Adjust as needed */
+}
+
+.photo-notice-container img {
+    width: 100%;
+    display: block;
+}
+
+.photo-notice-container .notice {
+    position: absolute;
+    bottom: -50px; /* Adjust as needed */
+    width: 100%;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: bottom 0.5s;
+}
+
+.photo-notice-container:hover .notice {
+    bottom: 0;
+}
+.shivam1{
+    display: flex;
+}
+.shivam2{
+    background-color: #ffc3c3;
+    box-shadow: 10px  10px 12px
+    black;
+    border: 4px solid black;
+    animation-name: springy-text;
+    animation-iteration-count: infinite;
+}
+.shivam{
+    background-color: #ffc3c3;
+    box-shadow: 10px  10px 12px
+    black;
+    border: 4px solid black;
+    animation-name: springy-text;
+    animation-iteration-count: infinite;
+}
+.shivam1{
+    height: 400px;
+}
+.shivam3{
+    display: flexbox;
+}
+
+.shivam4{
+    background-color: #ffc3c3;
+    box-shadow: 10px  10px 12px
+    black;
+    border: 4px solid black;
+    animation-iteration-count: infinite;
+    float: right;
+    width: 450px;
+    height: 400px;
+    border: 4px solid #030000;
+}
+.shivam3{
+   height: 400px;
+}
+
+/********** Footer CSS Ends **********/
